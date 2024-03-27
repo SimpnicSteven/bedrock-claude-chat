@@ -23,6 +23,7 @@ import PopoverItem from '../components/PopoverItem';
 import useChat from '../hooks/useChat';
 import Help from '../components/Help';
 import StatusSyncBot from '../components/StatusSyncBot';
+import { checkUserPermission } from '../utils';
 
 type ItemBotProps = BaseProps & {
   bot: BotListItem;
@@ -106,8 +107,18 @@ const BotExplorePage: React.FC = () => {
   }, [myBots, targetShareIndex]);
 
   const onClickNewBot = useCallback(() => {
-    navigate('/bot/new');
-  }, [navigate]);
+    checkUserPermission()
+    .then(isAllowed => {
+      if (isAllowed) {
+        navigate('/bot/new');  
+      } else {
+        alert(t('error.noPermissionToCreateBot'));
+      }
+    })
+    .catch(error => {
+      console.log(t('error.noPermissionToCreateBot'), error);
+    });
+  }, [navigate,t]);
 
   const onClickEditBot = useCallback(
     (botId: string) => {

@@ -188,6 +188,7 @@ How would you categorize this email?`,
           'Unexpected response received. The response format does not match the expected format.',
       },
       notSupportedImage: 'The selected model does not support images.',
+      noPermissionToCreateBot: 'You have no right to create new bot',
     },
   },
 };

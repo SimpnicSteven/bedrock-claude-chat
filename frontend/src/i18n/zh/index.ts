@@ -40,6 +40,7 @@ const translation = {
         general: '在预测时发生了错误。',
         invalidResponse: '收到了意外的回应。',
       },
+      noPermissionToCreateBot: '您沒有權限新增機器人'
     },
   },
 };

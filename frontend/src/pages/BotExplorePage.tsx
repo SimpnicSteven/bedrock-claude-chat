@@ -1,7 +1,8 @@
-import React, { ReactNode, useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
 import {
+  PiGlobe,
   PiLink,
   PiLockKey,
   PiPlus,
@@ -13,17 +14,18 @@ import {
 } from 'react-icons/pi';
 import { useNavigate } from 'react-router-dom';
 import useBot from '../hooks/useBot';
-import { BotMeta, BotListItem } from '../@types/bot';
+import { BotMeta } from '../@types/bot';
 import DialogConfirmDeleteBot from '../components/DialogConfirmDeleteBot';
 import DialogConfirmShareBot from '../components/DialogShareBot';
 import ButtonIcon from '../components/ButtonIcon';
-import { BaseProps } from '../@types/common';
 import PopoverMenu from '../components/PopoverMenu';
 import PopoverItem from '../components/PopoverItem';
 import useChat from '../hooks/useChat';
 import Help from '../components/Help';
 import StatusSyncBot from '../components/StatusSyncBot';
-import { checkUserPermission } from '../utils';
+import { checkUserPermission } from '../utils'; // Added for Admin permission by Steven 2024/03
+import useUser from '../hooks/useUser';
+import ListItemBot from '../components/ListItemBot';
 
 type ItemBotProps = BaseProps & {
   bot: BotListItem;
@@ -79,6 +81,7 @@ const ItemBot: React.FC<ItemBotProps> = (props) => {
 const BotExplorePage: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const { isAllowApiSettings } = useUser();
 
   const [isOpenDeleteDialog, setIsOpenDeleteDialog] = useState(false);
   const [isOpenShareDialog, setIsOpenShareDialog] = useState(false);
@@ -146,6 +149,13 @@ const BotExplorePage: React.FC = () => {
     setTargetShareIndex(targetIndex);
   }, []);
 
+  const onClickApiSettings = useCallback(
+    (botId: string) => {
+      navigate(`/bot/api-settings/${botId}`);
+    },
+    [navigate]
+  );
+
   const onToggleShare = useCallback(() => {
     if (targetShareBot) {
       updateBotSharing(targetShareBot.id, !targetShareBot.isPublic);
@@ -204,7 +214,7 @@ const BotExplorePage: React.FC = () => {
                 </div>
               )}
               {myBots?.map((bot, idx) => (
-                <ItemBot
+                <ListItemBot
                   key={bot.id}
                   bot={bot}
                   onClick={onClickBot}
@@ -276,7 +286,15 @@ const BotExplorePage: React.FC = () => {
                           <PiUsers />
                           {t('bot.button.share')}
                         </PopoverItem>
-
+                        {isAllowApiSettings && (
+                          <PopoverItem
+                            onClick={() => {
+                              onClickApiSettings(bot.id);
+                            }}>
+                            <PiGlobe />
+                            {t('bot.button.apiSettings')}
+                          </PopoverItem>
+                        )}
                         <PopoverItem
                           className="font-bold text-red"
                           onClick={() => {
@@ -288,7 +306,7 @@ const BotExplorePage: React.FC = () => {
                       </PopoverMenu>
                     </div>
                   </div>
-                </ItemBot>
+                </ListItemBot>
               ))}
             </div>
           </div>
@@ -304,7 +322,7 @@ const BotExplorePage: React.FC = () => {
                 </div>
               )}
               {recentlyUsedSharedBots?.map((bot) => (
-                <ItemBot
+                <ListItemBot
                   key={bot.id}
                   bot={bot}
                   onClick={onClickBot}
@@ -333,7 +351,7 @@ const BotExplorePage: React.FC = () => {
                     }}>
                     <PiTrash />
                   </ButtonIcon>
-                </ItemBot>
+                </ListItemBot>
               ))}
             </div>
           </div>

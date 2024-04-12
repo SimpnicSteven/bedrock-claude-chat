@@ -1,0 +1,433 @@
+# About Connection Technology Systems Inc. (CTS)
+
+Q: Who is CTS?
+A: Connection Technology Systems Inc. (CTS) is a company that offers a range of networking products, including Gigabit Fiber Termination Media Converters, Managed Fiber Switches, and Managed Layer 2 Ethernet Switches.
+
+Q: What are CTS's principles?
+A: Quality and customer satisfaction are important principles for CTS. The company aims to build long-lasting relationships with customers by providing high-quality products and meeting their clients' needs.
+
+Q: What is CTS's mission?
+A: CTS's mission is to deliver innovative and reliable networking solutions that empower businesses and individuals to connect seamlessly and securely. By combining cutting-edge technology with a customer-centric approach, CTS strives to be a trusted partner in enabling efficient and robust network infrastructures.
+
+Q: What sets CTS apart?
+A: CTS distinguishes itself through its commitment to excellence, attention to detail, and dedication to customer support. The company's products are designed with quality and performance in mind, ensuring reliable connectivity and optimal user experiences.
+
+Q: Where can I find more information about CTS?
+A: For more information about CTS, its products, and services, please visit the company's website at [https://www.ctsystem.com/en/]. You can also contact CTS's customer support team for any inquiries or assistance.
+
+Q: What networking products does CTS offer?
+A: CTS offers a range of networking products designed to meet various industrial and commercial needs, including:
+
+    1. Gigabit Fiber Termination Media Converter
+
+        - Designed for easy fiber deployment and management
+        - Suitable for extending network distances over fiber
+        - Ideal for environments requiring high bandwidth and fiber extension
+
+    2. Managed Fiber Switch
+
+        - Designed for high-performance fiber networks
+        - Offers multiple fiber ports for connecting different fiber network segments
+        - Suitable for large-scale deployments in enterprises and data centers
+
+    3. Managed Layer 2 Ethernet Switch
+
+        - Provides versatile network management features and high-speed Ethernet connectivity
+        - Suitable for various applications like industrial control, building automation, and campus networking
+        - Each product series is designed with specific features to cater to different networking scenarios, ensuring high-quality connectivity and network performance.
+
+# Technical Support Information
+
+Q: How can I contact CTS for technical support or inquiries?
+A: You can reach out to CTS through the following channels:
+
+    ## Headquarters
+    Connection Technology Systems Inc.
+    18F-6, No.79, Sec.1, Xintai 5th Rd., Xizhi Dist., New Taipei City 221, TAIWAN, R.O.C.
+    Tel: +886 2 26989661
+    Fax: +886 2 26983960
+
+    ## Email Contacts
+
+    - General Information: info@ctsystem.com
+    - Sales Contact: cts_esales@ctsystem.com
+    - Technical Support: cts_fae@ctsystem.com
+    - Marketing: cts_marketing@ctsystem.com
+
+    ## Branch Offices
+
+    - Connection Technology Systems NE AB (Sweden)
+    E A Rosengrens gata 31, 421 31 Västra Frölunda, Sweden
+    Tel: +46 31 22 19 80
+    Email: info@ctsystem.se
+
+    - Connection Technology Systems Japan Ltd. (Japan)
+    Higobashi Bldg, No3 R201, 1-23-13, Edobori, Nisi-ku, Osaka 550-0002, Japan
+    Tel: +81 6 6450 8890
+    Fax: +81 6 6450 8898
+    Email: cts_japan@ctsystem.com
+
+    - Connection Technology Systems Central Europe (Austria)
+    Hirschstettner Straße 19-21/Stiege I, A-1220 Vienna, Austria
+    Tel: +43 1 235 05 66 0
+    Email: cts_ce@ctsystem.com
+
+    - Connection Technology USA, Inc. (USA)
+    40538 La Purissima Way, Fremont, CA 94539 USA
+    Tel/Sales: +1 510 509 0305
+    Tel/Admin: +1 510 509 0304
+    Email: cts_us@ctsystem.com
+
+    - Connection Technology Systems India Private Limited (India)
+    No.1,1st Floor,RK Residency Vajarahalli, Uttarahalli,Talgatpura, Kanakpura MN Rd, Bangalore, Karnataka, India, 560062
+    Email: kirti_simha@ctsystem.com
+
+# Introduction 
+
+Q: What is this product for?
+A: This product aims to provide a stable and reliable WiFi solution for home users who lack technical expertise, ensuring seamless internet connectivity without the need for manual configuration or troubleshooting.
+
+Q: Who is the target audience for this product?
+A: The product is primarily designed for general home users, especially European households, who have limited knowledge of wireless networking technologies and are unable to optimize and maintain their home WiFi networks on their own.
+
+Q: What are the main features of this product?
+A: The key features of this product include:
+    1. Easy to use, providing a high-quality wireless network experience without complex setup.
+    2. Continuous stability, ensuring uninterrupted internet connectivity for users.
+    3. Remote management, allowing users to easily manage and control the router through a mobile app.
+    4. Automatic optimization, with the system automatically selecting the best wireless channel and adjusting relevant parameters.
+
+Q: What is the model name of this product?
+A: The model name of this product is MWR-3102-AX54.
+
+Q: What is the name of this product?
+A: We can call this product "MWR-3102-AX54", "MWR", "MWR-3102".
+
+
+# CTS Wi-Fi App
+
+Q: What is the CTS Wi-Fi App which named "iConNet"?
+A: The "iConNet" App is a convenient router management application that allows users to control and optimize their home network experience. It offers a range of features for network management, security configuration, troubleshooting, and advanced settings.
+
+Q: What are the main features of the app?
+A: Some key features of the iConNet include:
+    - Network management tools to monitor and control connected devices
+    - Parental control settings for safe internet access
+    - Troubleshooting utilities to diagnose and resolve network issues
+    - Advanced options for port forwarding, QoS, and remote access
+
+Q: On which platforms is the app available?
+A: The iConNet App is available for both iOS (13+) and Android (11+) devices.
+
+
+# Getting Started
+
+## Installation
+
+Q: How do I install the iConNet on my iOS (iPhone) device?
+A: To install the app on your iOS device, follow these steps:
+    1. Open the App Store on your iOS device.
+    2. Search for "iConNet - WiFi Powered by CTS".
+    3. Find the app in the search results and tap on it.
+    4. Tap the "Download" button. You may need to authenticate with your Apple ID.
+    5. Once downloaded, the app will be installed on your device.
+    6. You can find the app icon on your home screen. Tap it to launch iConNet.
+
+Q: How do I install the iConNet on my Android device?
+A: To install the app on your Android device, follow these steps:
+    1. Open the Play Store on your Android device.
+    2. Search for "iConNet - WiFi Powered by CTS".
+    3. Find the app in the search results and tap on it.
+    4. Tap the "Install" button.
+    5. The app will be downloaded and installed on your device.
+    6. You can find the app icon in your app drawer or home screen. Tap it to open iConNet.
+
+## Initial Setup
+
+Q: How do I connect the app to my router for the initial setup?
+A: To connect the app to your router and perform the initial setup, follow these steps:
+    1. Open the iConNet app you just installed.
+    2. On the welcome screen, you have three options:
+        - Sign in with a third-party account (Google or Apple)
+        - Log in with your existing account credentials
+        - Create a new account by providing your email and setting a password
+    3. After signing in or creating an account, tap "Setup New Network" on the home screen.
+    4. Follow the on-screen instructions to configure your router settings, such as:
+        - Scanning the QR code on your router
+        - Choosing a Wi-Fi network name (SSID) and password
+        - Selecting the appropriate connection type (DHCP, PPPoE, or Static IP)
+    5. The app will apply the settings to your router, which may restart automatically.
+    6. Wait for the LED indicator on your router to turn blue, indicating the setup is complete.
+    7. You can now connect your devices to the newly configured Wi-Fi network.
+
+# Navigating the App
+
+## Home Screen
+
+Q: What can I do on the Home Screen of the iConNet App?
+A: The Home Screen is the central hub for managing your router and network. Here are the key features available:
+    1. Share Wi-Fi: Easily share your Wi-Fi network credentials with guests by generating a QR code or sharing the network name and password.
+    2. Device Manager: View and manage all devices connected to your network. You can rename devices, set access schedules, or block unwanted devices.
+    3. Network Map: Get a visual representation of your network topology to identify potential connectivity issues and optimize performance.
+    4. Settings: Access advanced settings to configure your router, reset Wi-Fi credentials, or restart the system.
+    5. Support: Find FAQs, troubleshooting guides, and contact information for customer support.
+
+## Menu Options
+
+Q: What other menu options are available in the app?
+A: Apart from the Home Screen, the app provides additional menu options for various features and settings, such as:
+- Share Wi-Fi
+- Network Map
+- Device Manager
+- Settings
+
+## User Interface
+
+Q: How can I navigate the app's user interface?
+A: The app's user interface is designed for easy navigation. You can access different sections and features by tapping on the corresponding menu options or icons. The interface is intuitive and user-friendly, with clear labels and descriptions for each setting or feature.
+
+Q: Can you provide some examples of navigating the user interface?
+A: Sure, here are a few examples:
+    - To access Parental Controls for a device:
+        1. Go to the "Device Manager" from the Home Screen.
+        2. Locate the device you want to set parental controls for and tap on it.
+        3. You'll see options to set time limits or restrict internet access for that device.
+    - To configure the Guest Network:
+        1. From the Home Screen, tap on "Share Wi-Fi".
+        2. You'll find options to enable/disable and configure the guest network.
+        3. Change the guest network SSID, password, and set any desired access restrictions.
+    - To view connected devices:
+        1. From the Home Screen, go to the "Device Manager" section.
+        2. You'll see a list of all devices currently connected to your network.
+        3. Tap on a device to view more details or make changes to its settings.
+    - To access advanced router settings:
+        1. Tap on the "Settings" option from the Home Screen.
+        2. You'll find options to configure SSID, connection type, etc.
+        3. Make the desired changes and tap "Apply" to save the new settings.
+
+# Installation
+
+## Hardware Setup
+
+Q: How do I physically set up the router?
+A: To set up the router hardware, follow these steps:
+    1. Power on the router and connect an Ethernet cable from the router's 2.5G port to your broadband modem. (Unless you change the WAN/LAN port configuration via the web interface later.)
+
+    2. For wireless setup:
+
+        - Scan the QR code printed on the router's label using your mobile device's camera.
+        - This will connect your mobile device to the router's default Wi-Fi network.
+    3. It is recommended to use the mobile app for initial setup and configuration:
+
+        - Open the iConNet app on your mobile device (now connected to the router's Wi-Fi).
+        - Follow the app's instructions to configure network parameters like Wi-Fi name (SSID), password, and connection type based on your internet service provider's requirements.
+
+Q: How do I restart the router's system?
+A: To restart the router's system, follow these steps:
+
+    1. Insert a paperclip into the reset button hole on the router.
+    2. Press and hold the reset button for more than 3 seconds until the LED light starts flashing orange.
+    3. Release the reset button. The LED status light will start pulsing white, indicating the system is restarting.
+
+Q: How do I reset the router to factory default settings?
+A: To reset the router to its factory default settings, follow these steps:
+
+    1. Insert a paperclip into the reset button hole on the router.
+    2. Press and hold the reset button for 10 seconds until the LED status light starts pulsing red.
+    3. Release the reset button. The LED status light will subsequently indicate pulsing white, and the router will reset to its factory default settings.
+
+Q: How do I add a new node to extend the network?
+A: To add a new node (mesh extender) to your network, follow these steps:
+
+    1. Power on the new node.
+    2. In the mobile app, click the "Add Node" option.
+    3. Follow the on-screen instructions in the app, which may include:
+        - Pressing the node's WPS button for 5 seconds until the LED starts pulsing blue.
+        - Waiting for the pairing process to complete.
+
+
+# Behavior
+
+Q: What are the different behavior modes of the router?
+A: The router has several behavior modes, indicated by different LED light patterns and button actions:
+
+    1. WPS AP Mode:
+        
+        - To enter this mode, press and hold the WPS button for 1 to less than 5 seconds.
+        - The LED will cycle between blue and white every 0.5 seconds.
+        - This mode allows easy connection of devices to the Wi-Fi network.
+    
+    2. Pairing Mode:
+
+        - To enter this mode, press and hold the WPS button for 5 seconds or longer.
+        - The LED will display a pulsing blue light, with 0.5 seconds on and 0.5 seconds off.
+        - This mode is used for pairing the router with other nodes (mesh extenders).
+
+    3. Powering Up / System Restarting:
+
+        - During power-up or system restart, the LED will pulse white, with 0.5 seconds on and 0.5 seconds off.
+
+    4. Connected to the Internet:
+
+        - When the router is successfully connected to the internet, the LED will be solid blue.
+
+    5. No Internet Connection:
+
+        - If the router has no internet connection, the LED will be solid red.
+
+    6. Factory Resetting:
+
+        - During a factory reset process, the LED will pulse red, with 0.5 seconds on and 0.5 seconds off.
+
+    7. Prepare for Reboot:
+
+        - When preparing for a system reboot, the LED will pulse orange, with 0.5 seconds on and 0.5 seconds off.
+
+    8. Firmware Upgrading:
+
+        - During a firmware upgrade process, the LED will cycle through white, blue, and red, with each color displayed for 0.5 seconds on and 0.5 seconds off.
+
+Q: What do the different LED colors and patterns indicate?
+A: The LED colors and patterns indicate various states and processes of the router, such as:
+
+    - Solid blue: Connected to the internet
+    - Solid red: No internet connection
+    - Pulsing white: Powering up, restarting
+    - Pulsing red: Factory reset in progress
+    - Pulsing orange: Preparing for reboot
+    - Cycling colors: Firmware upgrade in progress
+
+Q: What actions are associated with the buttons on the router?
+A: The router has two main buttons: the WPS button and the Reset button.
+
+    - WPS Button:
+
+        - Press and hold for 1 to less than 5 seconds: Enters WPS AP mode for easy device connection
+        - Press and hold for 5 seconds or longer: Enters Pairing mode for adding new nodes
+
+    - Reset Button:
+
+        - Press and hold for more than 3 seconds: Initiates a system reboot
+        - Press and hold for 10 seconds: Initiates a factory reset
+
+Q: What Wi-Fi standards does the router support?
+A: The router supports the following Wi-Fi standards:
+
+    - 2.4GHz band: IEEE 802.11ax/n/b/g
+    - 5GHz band: IEEE 802.11ax/ac/n/a
+    - It also supports IEEE 802.11k/v standards for improved network efficiency and device handover between access points.
+
+Q: What are the maximum wireless data rates supported by the router?
+A: The maximum wireless data rates supported by the router are:
+
+    - 2.4GHz band: Up to 574Mbps (802.11ax)
+    - 5GHz band: Up to 4804Mbps (802.11ax)
+
+Q: What channel bonding and modulation techniques are used?
+A: The router utilizes the following techniques to enhance wireless performance:
+
+    - Channel Bonding:
+        - 2.4GHz band: Supports 20/40MHz channel widths
+        - 5GHz band: Supports 40/80/160MHz channel widths
+    - 1024-QAM (Quadrature Amplitude Modulation) for increased throughput
+    - OFDMA (Orthogonal Frequency Division Multiple Access) for improved efficiency and reduced latency
+
+Q: What are some other notable wireless features?
+A: The router offers several additional wireless features, including:
+
+    1. Support for 2 separate SSIDs (one for main network and one for guest network)
+    2. Wireless AP Mode for using the device as a Wi-Fi access point
+    3. Wi-Fi Multimedia (WMM) for prioritizing network traffic
+    4. Airtime Fairness (ATF) for equal airtime allocation to clients
+    5. Wi-Fi Protected Setup (WPS) for easy device connection
+    6. Automatic channel selection for optimal performance
+    7. MU-MIMO and Beamforming for enhanced capacity and coverage
+    7. Band Steering for automatic load balancing between 2.4GHz and 5GHz bands
+
+Q: What wireless security features are available?
+A: The router supports the following wireless security features:
+
+    1. 64/128-bit WPA2/WPA3 data encryption for secure wireless communication
+    2. Firewall with global enable/disable control and protection against various intrusion events
+    3. Device Access Control through HTTP/HTTPS port control for secure device management
+
+# Network and Management Features
+Q: What network features does the router support?
+A: The router offers the following network features:
+
+    1. IEEE 802.1q VLAN Tagging: Allows network segmentation and enhanced security through virtual LANs.
+    2. Client Information: Provides detailed information about connected devices for better network management.
+
+Q: What are the management options available for the router?
+A: The router can be managed through various methods, including:
+
+    1. HTTP/HTTPS: Allows configuration and monitoring through a web-based interface.
+    2. TR-069/181: Supports remote configuration and monitoring using these standards.
+    3. Mobile App: Android and iOS apps are available for convenient network management from mobile devices.
+
+Q: What are some additional management features provided by the router?
+A: The router offers several advanced management features, such as:
+
+    1. Network Map: Provides a visual representation of the network topology and connected devices.
+    2. Mesh Management: Allows configuration and control of mesh nodes (extenders) for extended Wi-Fi coverage.
+    3. Event Log/Syslog: Logs system events and activities for monitoring and troubleshooting purposes.
+    4. Ping/Traceroute: Built-in tools for network diagnostics and connectivity testing.
+    5. Firmware Upgrade: Supports firmware updates for adding new features and security patches.
+    6. Dual Image: Allows safer firmware updates by using separate partitions for downloading and working, with automatic rollback in case of failures.
+
+Q: What parental control features are available?
+A: The router includes the following parental control features:
+
+    1. Time Controls: Ability to set schedules and time limits for internet access.
+    2. Internet Access Management: Option to pause or restrict internet access for specific devices or users.
+
+# Web Interface Features
+Q: What can I see on the Network Map page of the web interface?
+A: The Network Map page provides an overview of your network status and configuration, including:
+
+    - Internet Status
+    - Router Information (model, firmware version, etc.)
+    - Wireless Settings (SSID, encryption mode, channel)
+    - Guest Network Access
+    - Performance Metrics (CPU load, memory usage)
+    - Ethernet Status (link up/down, speed)
+    - List of Connected Clients
+
+Q: What network configuration options are available?
+A: The web interface allows you to configure various network settings, such as:
+
+    - Internet (WAN) Settings
+        - Dynamic IP
+        - Static IP
+        - PPPoE
+    - LAN Settings
+        - DHCP Server
+        - Address Reservation (IPv4 only)
+        - DHCP Client List
+    - Dynamic DNS (DDNS) with support for No-IP and DynDNS
+    - Routing (Static Routing, Routing Table)
+
+Q: How can I configure wireless settings?
+A: The wireless settings section allows you to:
+
+    - Enable/disable main and guest Wi-Fi networks
+    - Configure auto channel selection and Smart Connect
+    - Set wireless encryption methods (WPA2, WPA2/WPA3, WPA3 with AES)
+    - Separately configure 2.4GHz and 5GHz bands
+
+Q: What security features are available?
+A: The web interface provides access to security features like:
+
+    - Firewall settings
+    - Device Access Control
+
+Q: What are some other notable features?
+A: Additional features accessible through the web interface include:
+
+    - IPv6 Support (WAN and LAN configurations)
+    - Firmware Upgrade (online and local)
+    - Backup and Restore (system backup, restore, factory reset)
+    - Administration Tools (change system password)
+    - Time and Language Settings
+    - Reboot option
+    - 1G/2.5G Port WAN/LAN Function Switch (requires reboot after configuration change)

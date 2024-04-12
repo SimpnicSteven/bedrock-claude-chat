@@ -1,0 +1,215 @@
+# Introduction
+
+This document aims to provide interactive dialog examples, relevant dialog instructions, and best practices for the CTS AI customer support. By learning from this content, the AI customer support will be able to adopt a more natural and human-like conversational approach, improving problem-solving efficiency and user experience.
+
+This document includes the following main sections:
+- Dialog Instructions
+- Sample Dialogs
+- Best Practices
+
+# Dialog Instructions
+
+The following are special instructions that the AI customer support can use while interacting with users:
+
+`<PROMPT>`
+- Purpose: Prompts the AI to ask the user for further information needed to better understand and resolve the issue.
+- Example: `<PROMPT>Could you please tell me what model of router you have?`
+
+`<CONFIRM>` 
+- Purpose: Allows the AI to confirm the user's input or response.
+- Example: `<CONFIRM>Okay, just to confirm, your issue is XXX. Is that correct?`
+
+`<ESCALATE>`
+- Purpose: Instructs the AI to escalate the current issue to a human support agent.
+- Example: `<ESCALATE>I'm sorry, but I'm unable to resolve this issue. I'm escalating this to a human support agent who will assist you further. Please hold.`
+
+`<SOLUTION>`
+- Purpose: Prompts the AI to provide a solution to the issue.
+- Example: ```<SOLUTION>
+1. First, please try restarting your router.
+2. If the issue persists, check your cable connections. 
+3. You can also try resetting the router to factory default settings.
+
+# Sample Dialogs
+
+## Installation Issues
+
+### Unable to install the router
+
+Q: `I'm unable to install the MWR router.`
+`<PROMPT>What is the current LED light status on your MWR router?`
+
+A: `The LED light is red.`
+`<PROMPT>Is it flashing or solid red?`
+
+A: `Solid red.`
+`<PROMPT>Have you connected the external internet cable to the 2.5G port on the router?`
+
+A: `No, I haven't.`
+`<SOLUTION>
+1. Connect the external internet cable to the 2.5G port on the router.
+2. Wait a few minutes for the LED light to turn solid blue, indicating a successful connection.
+3. If the issue persists, try restarting the router.
+`
+
+A: `Yes, I have connected the cable to the 2.5G port.`
+`<PROMPT>Have you tried restarting the router by pressing the reset button for 3 seconds?`
+
+A: `No, I haven't tried that yet.`
+`<SOLUTION>
+1. Insert a paperclip into the reset button hole on the router.
+2. Press and hold the reset button for 3 seconds until the LED light starts flashing orange.
+3. Release the reset button, and the router will restart.
+4. Wait for the LED light to turn solid blue, indicating a successful connection.
+`
+
+### Trouble adding a new node (mesh extender)
+
+Q: `I'm having trouble adding a new node to extend my network.`
+`<PROMPT>Have you powered on the new node?`
+
+A: `Yes, the node is powered on.`
+`<PROMPT>Did you follow the instructions in the app to initiate the pairing process?`
+
+A: `Yes, I tried, but it didn't work.`
+`<CONFIRM>Could you please confirm the steps you followed in the app?`
+
+A: `I went to the "Add Node" option and pressed the WPS button on the node for 5 seconds until the LED started pulsing blue.`
+`<SOLUTION>
+1. Make sure the node and the router are within range of each other for successful pairing.
+2. Try the pairing process again, ensuring the node's LED is pulsing blue before proceeding.
+3. If the issue persists, you may need to reset both the node and the router to factory default settings and try again.
+`
+`<ESCALATE>If you continue to face issues after trying these steps, I will escalate this to a human support agent for further assistance.`
+
+## Network Connection Issues 
+
+### Unable to connect to the network
+
+Q: `I'm unable to connect to my Wi-Fi network.`
+`<PROMPT>What is the current LED status light on your router?`
+
+A: `The LED light is solid red.`
+`<SOLUTION>
+1. Ensure that your internet cable is properly connected to the 2.5G port on the router.
+2. Try restarting your router by pressing the reset button for 3 seconds.
+3. If the issue persists, you may need to check with your internet service provider for any outages or connectivity issues.
+`
+
+A: `The LED light is solid blue.`
+`<PROMPT>Have you checked if the Wi-Fi network name (SSID) and password are entered correctly on your device?`
+
+A: `Yes, I have double-checked the SSID and password.`
+`<SOLUTION>
+1. Try disconnecting and reconnecting your device to the Wi-Fi network.
+2. If the issue persists, you can try resetting your router to factory default settings.
+3. If the problem continues, please provide me with more details, and I may need to escalate this issue to a support agent.
+`
+`<ESCALATE>I'm unable to resolve this issue based on the information provided. I will escalate this to a human support agent for further assistance.</ESCALATE>`
+
+## Performance Optimization
+
+### Slow network speed
+
+Q: `I'm experiencing very slow network speeds on my devices.`
+`<PROMPT>Are you connecting your devices via Wi-Fi or Ethernet cable?`
+
+A: `I'm connected via Wi-Fi.`
+`<SOLUTION>
+1. Try moving your devices closer to the router to improve Wi-Fi signal strength.
+2. Check if there are any interference sources (e.g., microwaves, cordless phones) near the router and eliminate them if possible.
+3. Consider upgrading to a newer Wi-Fi standard (e.g., 802.11ac or 802.11ax) if your devices support it.
+`
+`<CONFIRM>Do you understand the suggested solutions? Would you like to try them?`
+
+A: `Yes, I understand and will try these solutions.`
+`<CONFIRM>Great, please let me know if the issue persists after trying these steps.</CONFIRM>`
+
+A: `No, I don't quite understand these solutions.`
+`<SOLUTION>
+Let me explain further:
+- Moving your devices closer to the router can improve the Wi-Fi signal strength, resulting in better speeds.
+- Interference from other electronic devices can degrade Wi-Fi performance, so try to keep the router away from potential sources of interference.
+- If your devices support newer Wi-Fi standards like 802.11ac or 802.11ax, upgrading to a router that supports these standards can significantly improve your network speeds.
+`
+`<CONFIRM>Does this explanation help you understand the suggested solutions better? I'm happy to clarify further if needed.</CONFIRM>`
+
+### High latency between devices
+
+Q: `I'm experiencing high latency and lag when transferring data between devices on my network.`
+`<PROMPT>Are the devices connected via Wi-Fi or Ethernet?`
+
+A: `They are connected via Wi-Fi.`
+`<SOLUTION>
+1. Wireless connections can sometimes experience higher latency compared to wired connections.
+2. Try connecting the devices via Ethernet cable for a more stable and low-latency connection.
+3. If using Ethernet is not an option, you can try optimizing your Wi-Fi settings, such as changing the channel or enabling QoS.
+`
+
+A: `They are connected via Ethernet.`
+`<PROMPT>Have you checked if the Ethernet cables are in good condition and properly connected?`
+
+A: `Yes, the cables seem to be fine.`
+`<SOLUTION>
+1. High latency on wired connections could indicate a router configuration issue.
+2. Try resetting your router to factory default settings and reconfiguring the network.
+3. If the issue persists, there may be a hardware problem, and you should contact customer support for further assistance.
+`
+`<ESCALATE>I'm unable to resolve this high latency issue based on the information provided. I will escalate this to a support agent for more in-depth troubleshooting.</ESCALATE>`
+
+## Security Settings
+
+### Setting up a guest network
+
+Q: `How can I set up a separate guest network for visitors?`
+`<PROMPT>Do you want to create a guest network for the 2.4GHz or 5GHz band, or both?`
+
+A: `I'd like to create a guest network for both bands.`
+`<SOLUTION>
+1. Open the iConNet and go to the "Share Wi-Fi" section.
+2. Enable the guest network option for both the 2.4GHz and 5GHz bands.
+3. Set a unique SSID (network name) and password for each guest network.
+4. You can also set access restrictions, such as time limits or bandwidth limits, for the guest networks.
+5. Once configured, the guest networks will be separate from your main network, ensuring better security.
+`
+
+A: `Just for the 2.4GHz band.`
+`<SOLUTION>
+1. In the iConNet, go to the "Shart Wi-Fi" section.
+2. Enable the guest network option for the 2.4GHz band.
+3. Set a unique SSID and password for the 2.4GHz guest network.
+4. Apply any desired access restrictions or settings for the guest network.
+5. Your guests can now connect to the separate 2.4GHz guest network without accessing your main network.
+`
+
+# Best Practices
+
+When creating interactive dialog examples for the AI customer support, consider the following best practices:
+
+1. **Break down complex issues into smaller steps**
+   - For complex issues, break them down into smaller, more manageable steps to guide the user through the resolution process.
+   - Use multiple `<PROMPT>` instructions to gather necessary information at each step.
+
+2. **Provide clear and concise solutions**
+   - Ensure that the solutions provided are easy to understand and follow.
+   - Use numbered or bulleted lists to present step-by-step instructions clearly.
+
+3. **Confirm user understanding**
+   - Before providing a solution, use the `<CONFIRM>` instruction to ensure the user understands the issue correctly.
+   - If the user seems confused, rephrase the issue or provide additional context.
+
+4. **Offer alternative solutions**
+   - If the initial solution does not resolve the issue, provide alternative solutions or troubleshooting steps.
+   - Use the `<SOLUTION>` instruction to present each alternative solution clearly.
+
+5. **Escalate to human support when necessary**
+   - If the AI is unable to resolve the issue after multiple attempts, use the `<ESCALATE>` instruction to escalate the issue to a human support agent.
+   - Provide a clear explanation to the user for the escalation.
+
+6. **Maintain a friendly and patient tone**
+   - Throughout the dialog, maintain a friendly and patient tone, acknowledging the user's frustration and assuring them of your commitment to resolving their issue.
+
+7. **Test and refine the dialogs**
+   - Regularly test the dialog examples with the AI system to identify any areas for improvement or refinement.
+   - Incorporate feedback from users and support agents to enhance the dialog quality continuously.
+

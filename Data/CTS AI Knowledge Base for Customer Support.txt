@@ -124,6 +124,9 @@ A: The iConNet App is available for both iOS (13+) and Android (11+) devices.
 
 ## Installation
 
+Q: Where can I install the iConNet?
+A: You can download it via https://onelink.to/68memy
+
 Q: How do I install the iConNet on my iOS (iPhone) device?
 A: To install the app on your iOS device, follow these steps:
     1. Open the App Store on your iOS device.

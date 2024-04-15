@@ -27,10 +27,13 @@ import StatusSyncBot from '../components/StatusSyncBot';
 import Alert from '../components/Alert';
 import useBotSummary from '../hooks/useBotSummary';
 import useModel from '../hooks/useModel';
+import useUser from '../hooks/useUser';
+
 
 const ChatPage: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const { isAdmin } = useUser();
 
   const {
     postingMessage,
@@ -92,6 +95,18 @@ const ChatPage: React.FC = () => {
     }
   }, [bot, t]);
 
+  const [disableInput, setDisableInput] = useState(false)
+  const [maxMessagesLength, setMaxMessagesLength] = useState(100);
+
+  useEffect(() => {
+    if (!isAdmin) {
+      setDisableInput(messages.length >= maxMessagesLength);
+      // console.log('messages length: ', messages.length);      
+    } else {
+      setDisableInput(false);
+    }
+  }, [isAdmin, messages, maxMessagesLength]);
+
   const disabledInput = useMemo(() => {
     return botId !== null && !isAvailabilityBot && !isLoadingBot;
   }, [botId, isAvailabilityBot, isLoadingBot]);
@@ -112,13 +127,15 @@ const ChatPage: React.FC = () => {
 
   const onSend = useCallback(
     (content: string, base64EncodedImages?: string[]) => {
-      postChat({
-        content,
-        base64EncodedImages,
-        bot: inputBotParams,
-      });
+      if (!disableInput){
+        postChat({
+          content,
+          base64EncodedImages,
+          bot: inputBotParams,
+        });        
+      }
     },
-    [inputBotParams, postChat]
+    [disableInput, inputBotParams, postChat]
   );
 
   const onChangeCurrentMessageId = useCallback(
@@ -349,11 +366,13 @@ const ChatPage: React.FC = () => {
         )}
         <InputChatContent
           dndMode={dndMode}
-          disabledSend={postingMessage}
+          disabledSend={postingMessage || disableInput}
           disabled={disabledInput}
           placeholder={
             disabledInput
               ? t('bot.label.notAvailableBotInputMessage')
+              : disableInput
+              ? t('bot.label.maxMessagesReached')
               : undefined
           }
           onSend={onSend}

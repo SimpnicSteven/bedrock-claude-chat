@@ -299,14 +299,16 @@ const ChatListDrawer: React.FC<Props> = (props) => {
             opened ? 'visible w-64' : 'invisible w-0'
           } text-sm  text-white transition-width`}>
           <div className="absolute top-0 w-full overflow-y-auto overflow-x-hidden pb-12">
-            <DrawerItem
-              isActive={false}
-              icon={<PiNotePencil />}
-              to=""
-              onClick={onClickNewChat}
-              labelComponent={t('button.newChat')}
-            />
-            <DrawerItem
+            {isAdmin && (
+              <DrawerItem
+                isActive={false}
+                icon={<PiNotePencil />}
+                to=""
+                onClick={onClickNewChat}
+                labelComponent={t('button.newChat')}
+              />
+            )}
+           <DrawerItem
               isActive={false}
               icon={<PiCompass />}
               to="bot/explore"

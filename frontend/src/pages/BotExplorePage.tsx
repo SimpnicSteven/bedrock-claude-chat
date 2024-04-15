@@ -23,14 +23,13 @@ import PopoverItem from '../components/PopoverItem';
 import useChat from '../hooks/useChat';
 import Help from '../components/Help';
 import StatusSyncBot from '../components/StatusSyncBot';
-import { checkUserPermission } from '../utils'; // Added for Admin permission by Steven 2024/03
 import useUser from '../hooks/useUser';
 import ListItemBot from '../components/ListItemBot';
 
 const BotExplorePage: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { isAllowApiSettings } = useUser();
+  const { isAllowApiSettings, isAdmin } = useUser();
 
   const [isOpenDeleteDialog, setIsOpenDeleteDialog] = useState(false);
   const [isOpenShareDialog, setIsOpenShareDialog] = useState(false);
@@ -59,18 +58,8 @@ const BotExplorePage: React.FC = () => {
   }, [myBots, targetShareIndex]);
 
   const onClickNewBot = useCallback(() => {
-    checkUserPermission()
-    .then(isAllowed => {
-      if (isAllowed) {
-        navigate('/bot/new');  
-      } else {
-        alert(t('error.noPermissionToCreateBot'));
-      }
-    })
-    .catch(error => {
-      console.log(t('error.noPermissionToCreateBot'), error);
-    });
-  }, [navigate,t]);
+    navigate('/bot/new');
+  }, [navigate]);
 
   const onClickEditBot = useCallback(
     (botId: string) => {
@@ -139,13 +128,13 @@ const BotExplorePage: React.FC = () => {
       />
       <div className="flex h-full justify-center">
         <div className="w-2/3">
+        {isAdmin && (
           <div className="h-1/2 w-full pt-8">
             <div className="flex items-end justify-between">
               <div className="flex items-center gap-2">
                 <div className="text-xl font-bold">{t('bot.label.myBots')}</div>
                 <Help direction="right" message={t('bot.help.overview')} />
               </div>
-
               <Button
                 className=" text-sm"
                 outlined
@@ -259,6 +248,8 @@ const BotExplorePage: React.FC = () => {
               ))}
             </div>
           </div>
+          )}
+
           <div className="h-1/2 w-full">
             <div className="text-xl font-bold">
               {t('bot.label.recentlyUsedBots')}

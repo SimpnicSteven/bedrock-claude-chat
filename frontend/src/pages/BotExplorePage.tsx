@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState, ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
 import {
@@ -14,7 +14,7 @@ import {
 } from 'react-icons/pi';
 import { useNavigate } from 'react-router-dom';
 import useBot from '../hooks/useBot';
-import { BotMeta } from '../@types/bot';
+import { BotMeta, BotListItem } from '../@types/bot';
 import DialogConfirmDeleteBot from '../components/DialogConfirmDeleteBot';
 import DialogConfirmShareBot from '../components/DialogShareBot';
 import ButtonIcon from '../components/ButtonIcon';
@@ -26,6 +26,7 @@ import StatusSyncBot from '../components/StatusSyncBot';
 import { checkUserPermission } from '../utils'; // Added for Admin permission by Steven 2024/03
 import useUser from '../hooks/useUser';
 import ListItemBot from '../components/ListItemBot';
+import { BaseProps } from '../@types/common';
 
 type ItemBotProps = BaseProps & {
   bot: BotListItem;

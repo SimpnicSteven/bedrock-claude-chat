@@ -96,7 +96,7 @@ const ChatPage: React.FC = () => {
   }, [bot, t]);
 
   const [disableInput, setDisableInput] = useState(false)
-  const [maxMessagesLength, setMaxMessagesLength] = useState(100);
+  const [maxMessagesLength] = useState(100);
 
   useEffect(() => {
     if (!isAdmin) {

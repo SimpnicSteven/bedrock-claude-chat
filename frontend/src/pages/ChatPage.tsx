@@ -129,7 +129,6 @@ const ChatPage: React.FC = () => {
   useEffect(() => {
     if (!isAdmin) {
       setDisableInput(messages.length >= maxMessagesLength);
-      // console.log('messages length: ', messages.length);      
     } else {
       setDisableInput(false);
     }
@@ -198,13 +197,9 @@ const ChatPage: React.FC = () => {
   }, [inputBotParams, regenerate]);
 
   useEffect(() => {
-    if (messages.length > 0) {
-      if (isAutoScroll){
-        console.log("Start Smooth Scroll");
-        smoothScrollToBottom(chatContainerRef);
-      } 
+    if (messages.length > 0 && isAutoScroll) {
+      smoothScrollToBottom(chatContainerRef);
     } else {
-        console.log("Start Scroll To Top");
         scrollToTop(chatContainerRef);
     }
   }, [messages, smoothScrollToBottom, scrollToTop, isAutoScroll]);

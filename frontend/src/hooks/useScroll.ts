@@ -1,4 +1,4 @@
-import React, { RefObject } from 'react';
+import { RefObject } from 'react';
 
 const useScroll = () => {
   const smoothScrollToBottom = (containerRef: RefObject<HTMLDivElement>) => {

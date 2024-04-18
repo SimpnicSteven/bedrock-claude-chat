@@ -1,43 +1,51 @@
-import { useEffect, useState } from 'react';
-
 const useScroll = () => {
-  const [disabled, setDisabled] = useState(false);
+  const smoothScrollToBottom = (containerRef: RefObject<HTMLDivElement>) => {
+    const container = containerRef.current;
+    if (!container) return;
 
-  useEffect(() => {
-    const elem = document.getElementById('main');
-    if (!elem) {
-      return;
-    }
-    const listener = () => {
-      // 最下部までスクロールしている場合は、自動スクロールする
-      if (elem.scrollTop + elem.clientHeight === elem.scrollHeight) {
-        setDisabled(false);
-      } else {
-        setDisabled(true);
+    const scrollHeight = container.scrollHeight;
+    const scrollTop = container.scrollTop;
+    const clientHeight = container.clientHeight;
+
+    console.log('isBottom?', scrollHeight - scrollTop);
+    console.log('clientHeight?', clientHeight);
+    if (scrollHeight - scrollTop <= clientHeight + 10) return; // 已經在底部
+
+    const targetScroll = scrollHeight;
+    let currentScroll = scrollTop;
+
+    console.log('targetScroll:', targetScroll);
+    console.log('currentScroll:', currentScroll);
+
+    const step = () => {
+      const distance = targetScroll - currentScroll;
+      const speed = Math.max(1, Math.abs(distance / 10));
+
+      currentScroll += distance > 0 ? speed : -speed;
+      console.log('currentScroll updated:', currentScroll);
+
+      if (container) {
+        container.scrollTop = currentScroll;
+
+        if (Math.abs(targetScroll - currentScroll) > 1) {
+          requestAnimationFrame(step);
+        }
       }
     };
-    elem.addEventListener('scroll', listener);
 
-    return () => {
-      elem.removeEventListener('scroll', listener);
-    };
-  }, []);
+    requestAnimationFrame(step);
+  };
+
+  const scrollToTop = (containerRef: RefObject<HTMLDivElement>) => {
+    const container = containerRef.current;
+    if (container) {
+      container.scrollTop = 0;
+    }
+  };
 
   return {
-    scrollToTop: () => {
-      document.getElementById('main')?.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    },
-    scrollToBottom: () => {
-      if (!disabled) {
-        document.getElementById('main')?.scrollTo({
-          top: document.getElementById('main')?.scrollHeight,
-          behavior: 'smooth',
-        });
-      }
-    },
+    smoothScrollToBottom,
+    scrollToTop,
   };
 };
 

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState, useRef } from 'react';
 import InputChatContent from '../components/InputChatContent';
 import useChat from '../hooks/useChat';
 import ChatMessage from '../components/ChatMessage';
@@ -51,7 +51,35 @@ const ChatPage: React.FC = () => {
 
   const { getBotId } = useConversation();
 
-  const { scrollToBottom, scrollToTop } = useScroll();
+  const chatContainerRef = useRef<HTMLDivElement>(null);
+  const [containerHeight, setContainerHeight] = useState(0);
+  const [isAutoScroll, setIsAutoScroll] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const container = chatContainerRef.current;
+      if (container) {
+        const containerHeight = window.innerHeight - container.offsetTop;
+        setContainerHeight(containerHeight);
+      }
+    };
+
+    handleResize(); // 初始化容器高度
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const handleScroll = () => {
+    const container = chatContainerRef.current;
+    if (!container) return;
+
+    const isAtBottom =
+      container.scrollHeight - container.scrollTop <= container.offsetHeight + 100;
+
+    setIsAutoScroll(isAtBottom);
+  };
+  
+  const { smoothScrollToBottom, scrollToTop } = useScroll();
 
   const { conversationId: paramConversationId, botId: paramBotId } =
     useParams();
@@ -171,11 +199,15 @@ const ChatPage: React.FC = () => {
 
   useEffect(() => {
     if (messages.length > 0) {
-      scrollToBottom();
+      if (isAutoScroll){
+        console.log("Start Smooth Scroll");
+        smoothScrollToBottom(chatContainerRef);
+      } 
     } else {
-      scrollToTop();
+        console.log("Start Scroll To Top");
+        scrollToTop(chatContainerRef);
     }
-  }, [messages, scrollToBottom, scrollToTop]);
+  }, [messages, smoothScrollToBottom, scrollToTop, isAutoScroll]);
 
   const { updateMyBotStarred, updateSharedBotStarred } = useBot();
   const onClickBotEdit = useCallback(
@@ -306,7 +338,12 @@ const ChatPage: React.FC = () => {
         )}
       </div>
       <hr className="w-full border-t border-gray" />
-      <div className="pb-52 lg:pb-40">
+      <div 
+        ref={chatContainerRef}
+        onScroll={handleScroll}
+        className="pb-52 lg:pb-40 overflow-y-auto"
+        style={{ height: `${containerHeight}px` }}
+      >
         {messages.length === 0 ? (
           <div className="relative flex w-full justify-center">
             {!loadingConversation && (

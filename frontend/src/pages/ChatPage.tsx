@@ -199,10 +199,8 @@ const ChatPage: React.FC = () => {
   useEffect(() => {
     if (messages.length > 0 && isAutoScroll) {
       smoothScrollToBottom(chatContainerRef);
-    } else {
-        scrollToTop(chatContainerRef);
     }
-  }, [messages, smoothScrollToBottom, scrollToTop, isAutoScroll]);
+  }, [messages, smoothScrollToBottom, isAutoScroll]);
 
   const { updateMyBotStarred, updateSharedBotStarred } = useBot();
   const onClickBotEdit = useCallback(

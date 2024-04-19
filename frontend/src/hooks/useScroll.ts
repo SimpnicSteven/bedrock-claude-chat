@@ -32,16 +32,8 @@ const useScroll = () => {
     requestAnimationFrame(step);
   };
 
-  const scrollToTop = (containerRef: RefObject<HTMLDivElement>) => {
-    const container = containerRef.current;
-    if (container) {
-      container.scrollTop = 0;
-    }
-  };
-
   return {
     smoothScrollToBottom,
-    scrollToTop,
   };
 };
 

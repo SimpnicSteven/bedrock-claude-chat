@@ -79,7 +79,7 @@ const ChatPage: React.FC = () => {
     setIsAutoScroll(isAtBottom);
   };
   
-  const { smoothScrollToBottom, scrollToTop } = useScroll();
+  const { smoothScrollToBottom } = useScroll();
 
   const { conversationId: paramConversationId, botId: paramBotId } =
     useParams();
